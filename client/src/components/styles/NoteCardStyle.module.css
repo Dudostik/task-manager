@@ -1,0 +1,62 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.content {
+  color: #34495e;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.editButton {
+  background: #4CAF50;
+  color: white;
+}
+
+.editButton:hover {
+  background: #3e8e41;
+}
+
+.deleteButton {
+  background: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background: #d32f2f;
+}

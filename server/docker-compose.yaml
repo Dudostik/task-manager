@@ -7,9 +7,6 @@ services:
     container_name: 'postgres-boilerplate'
     image: postgres:13.5
     restart: always
-    environment:
-      - POSTGRES_USER=myuser
-      - POSTGRES_PASSWORD=mypassword
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
